@@ -1,5 +1,9 @@
 const config = {
-  content: ["./index.html", "./main.tsx", "./App.tsx", "../src/OnlinePay.tsx"],
+  content: [
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
+    './node_modules/onlinepay-react/**/*.{js,ts,jsx,tsx}',
+  ],
   theme: {
     extend: {},
   },

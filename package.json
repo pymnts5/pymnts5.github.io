@@ -12,10 +12,12 @@
   "homepage": "https://pymnts5.github.io",
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.17",
+    "onlinepay-react": "github:pymnts5/onlinepay-react",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@types/react": "^19.2.4",
     "@vitejs/plugin-react": "^4.0.0",
     "autoprefixer": "^10.4.22",
     "gh-pages": "^6.3.0",
