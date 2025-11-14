@@ -7,7 +7,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d ./src/dist"
   },
   "homepage": "https://pymnts5.github.io",
   "dependencies": {
