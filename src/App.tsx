@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { OnlinePay } from 'onlinepay-react';
 
 function App() {
+  // This is for Github pages. You'd set to you public direct in the onlinepay-react component
   const [publicKey, setPublicKey] = useState<string | null>(null);
   useEffect(() => {
     async function fetchData() {
@@ -22,12 +23,16 @@ function App() {
 
   const handleError = ({ field }: PaymentError) => {
     if (field !== '') {
-      console.log(`Error in field ${field}`);
+      // console.log(`Error in field ${field}`);
     }
   };
 
   if (!publicKey) {
-    return <div>Loading...</div>;
+    return (
+      <div className='flex min-h-screen items-center justify-center font-sans'>
+        <div className='text-2xl'>Loading...</div>
+      </div>
+    );
   }
 
   return (
